@@ -1,5 +1,8 @@
-# simplilearn
+CalTech-PG-DevOps-Capstone-Project
+Project 3
 B-Safe.
+# simplilearn
+
 
 Create a CI/CD Pipeline to convert the legacy development process to a DevOps process.
 Background of the problem statement:
