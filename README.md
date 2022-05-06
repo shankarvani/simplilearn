@@ -1,5 +1,6 @@
 # simplilearn
 B-Safe.
+
 Create a CI/CD Pipeline to convert the legacy development process to a DevOps process.
 Background of the problem statement:
 A leading US healthcare company, Aetna, with a large IT structure had a 12-week release cycle and their business was impacted due to the legacy process. To gain
