@@ -1,4 +1,8 @@
-<h1> Welcome To A leading US healthcare company, Aetna</h1>
-<h2> Thanks for choosing our service</h2>
-<h2> please contact our customer service</h2>
-<h2>          ph:2344646565             </h2>
+<html>
+<head>
+<title>   Welcome To Aetna </title>
+</head>
+<body style = "background-image:url('https://tse1.mm.bing.net/th?id=OIP.Jl556_Su_AI3MDen21B3igHaDt&pid=Api&rs=1&c=1&qlt=95&w=191&h=95'); background-size: 100%">
+<h2 ALIGN=CENTER>Please contact our customer care for further details</h2>
+</body>
+</html>
