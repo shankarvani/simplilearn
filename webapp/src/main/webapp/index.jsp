@@ -3,6 +3,6 @@
 <title>   Welcome To Aetna </title>
 </head>
 <body style = "background-image:url('https://tse1.mm.bing.net/th?id=OIP.Jl556_Su_AI3MDen21B3igHaDt&pid=Api&rs=1&c=1&qlt=95&w=191&h=95'); background-size: 100%">
-<h2 ALIGN=CENTER>Please contact our customer care for further details</h2>
+<h2 ALIGN=CENTER> Please Contact Our Customercare For Further Details</h2>
 </body>
 </html>
