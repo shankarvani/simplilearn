@@ -1,0 +1,40 @@
+pipeline {
+    agent any
+ stages {
+  stage('Docker Build and Tag') {
+           steps {
+              
+                sh 'docker build -t tomcat .' 
+                  sh 'docker tag tomcat kalaivanishankar/tomcat'
+                sh 'docker tag tomcat  kalaivanishankar/tomcat:$BUILD_NUMBER'
+               
+          }
+        }
+     
+  stage('Publish image to Docker Hub') {
+          
+            steps {
+        withDockerRegistry([ credentialsId: "dockerHub", url: "" ]) {
+          sh  'docker push kalaivanishankar/tomcat'
+          sh  'docker push  kalaivanishankar/tomcat:$BUILD_NUMBER' 
+        }
+                  
+          }
+        }
+     
+      stage('Run Docker container on Jenkins Agent') {
+             
+            steps {
+                sh "docker run -d -p 8083:8080 kalaivanishankar/tomcat"
+ 
+            }
+        }
+ stage('Run Docker container on remote hosts') {
+             
+            steps {
+                sh "docker -H ssh://dockeradmin@172.31.22.245 run -d -p 4001:80  kalaivanishankar/tomcat"
+ 
+            }
+        }
+    }
+}
